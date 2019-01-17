@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<script language="javascript" src="js/jquery-1.4.4.min.js"></script>
+
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+	/*background: url('images/html_bg.gif') top center no-repeat;*/
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#header {
+	width: 1020px;
+	height: 551px;
+	background: url('images/headerbg.jpg') top left no-repeat;
+	text-align: left;
+}
+#footer {
+	width: 1020px;
+	height: 238px;
+	background: url('images/footerbg.jpg') top left no-repeat;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 50px;
+}
+#footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+#logo {
+	height: 100px;
+}
+
+
+
+/*hide buttons*/
+.hide {
+	display:none;
+}
+#navigation {
+	margin:0px;
+	padding-left: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+	list-style: none;
+	height:50px;
+	text-align: left;
+}
+#navigation ul{
+	list-style:none;
+	height:50px;
+	
+}
+#navigation ul li a{
+	height:50px;
+	
+}
+/* Styles for pretty buttons */
+#btn_1 {
+	width: 116px; height: 50px;
+	background: url('images/nav_02.png') top left no-repeat;
+	float: left;
+}
+#btn_1 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_02.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_1 a:hover {
+	background: url('images/nav2_02.png') top left no-repeat;
+}
+#btn_2 {
+	width: 84px; height: 50px;
+	background: url('images/nav_03.png') top left no-repeat;
+	float: left;
+}
+#btn_2 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_03.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_2 a:hover {
+	background: url('images/nav2_03.png') top left no-repeat;
+}
+#btn_3 {
+	width: 93px; height: 50px;
+	background: url('images/nav_04.png') top left no-repeat;
+	float: left;
+}
+#btn_3 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_04.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_3 a:hover {
+	background: url('images/nav2_04.png') top left no-repeat;
+}
+#btn_4 {
+	width: 93px; height: 50px;
+	background: url('images/nav_05.png') top left no-repeat;
+	float: left;
+}
+#btn_4 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_05.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_4 a:hover {
+	background: url('images/nav2_05.png') top left no-repeat;
+}
+#btn_5 {
+	width: 94px; height: 50px;
+	background: url('images/nav_06.png') top left no-repeat;
+	float: left;
+}
+#btn_5 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_06.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_5 a:hover {
+	background: url('images/nav2_06.png') top left no-repeat;
+}
+#btn_6 {
+	width: 96px; height: 50px;
+	background: url('images/nav_07.png') top left no-repeat;
+	float: left;
+}
+#btn_6 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_07.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_6 a:hover {
+	background: url('images/nav2_07.png') top left no-repeat;
+}
+#btn_7 {
+	width: 121px; height: 50px;
+	background: url('images/nav_08.png') top left no-repeat;
+	float: left;
+}
+#btn_7 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_08.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_7 a:hover {
+	background: url('images/nav2_08.png') top left no-repeat;
+}
+#btn_8 {
+	width: 82px; height: 50px;
+	background: url('images/nav_09.png') top left no-repeat;
+	float: left;
+}
+#btn_8 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_09.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_8 a:hover {
+	background: url('images/nav2_09.png') top left no-repeat;
+}
+#btn_9 {
+	width: 121px; height: 50px;
+	background: url('images/nav_10.png') top left no-repeat;
+	float: left;
+}
+#btn_9 a {
+	width: 100%; height: 100%;
+	background: url('images/nav_10.png') top left no-repeat;
+	display: block;
+	margin: 0; padding: 0; border: 0;
+	text-decoration: none;
+}
+#btn_9 a:hover {
+	background: url('images/nav2_10.png') top left no-repeat;
+}
+
+
+/* End of 'Top Navigation' */
+
+#page {
+	width: 1020px;
+}
+#leftside {
+	width: 250px;
+	float: left;
+}
+#middlecontent {
+	width: 520px;
+	float: left;
+	text-align: left;
+	color: #ffffff;
+}
+#middlecontent b {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+}
+#middlecontent i {
+	color: #a33324;
+	font-style: normal;
+	font-size: 14px;
+}
+#middlecontent .posted {
+	color: #5e7a21;
+}
+#middlecontent hr {
+	height: 5px;
+	border: 0px;
+	background: url('images/center_hr.gif') top left no-repeat;
+}
+#rightside {
+	width: 250px;
+	float: left;
+	text-align: right;
+	font-size: 14px;
+}
+#rightside b {
+	color: #5e7a21;
+}
+#rightside i {
+	color: #a33324;
+	font-style: normal;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<center>
+	<div id="header">
+		<div id="logo"><img src="images/smlogo.png" /></div>
+		<div id="navigation">
+			<ul>
+			
+<li id="btn_1"><a href=""><span class="hide">1</span></a></li>
+<li id="btn_2"><a  href=""><span class="hide">2</span></a></li>
+<li id="btn_3"><a  href=""><span class="hide">3</span></a></li>
+
+<li id="btn_4"><a  href=""><span class="hide">4</span></a></li>
+<li id="btn_5"><a  href=""><span class="hide">5</span></a></li>
+<li id="btn_6"><a  href=""><span class="hide">6</span></a></li>
+
+<li id="btn_7"><a  href=""><span class="hide">7</span></a></li>
+<li id="btn_8"><a  href=""><span class="hide">8</span></a></li>
+<li id="btn_9"><a  href=""><span class="hide">9</span></a></li>
+			
+			</ul>
+		</div>
+	</div>
+	
+	<div id="page">
+		<div id="leftside">
+			<a href="http://del.icio.us/post?url=http://www.siztermachyne.com&title=Sizter Machyne" target="_new"><img src="images/left_link_delicious.jpg" id="left-del" border="0" /></a><br />
+			<a href="http://digg.com/submit?phase=2&url=http://www.siztermachyne.com" target="_new"><img src="images/left_link_digg.jpg" id="left-dig" border="0" /></a><br />
+			<a href="http://www.myspace.com/therealsiztermachyne" target="_new"><img src="images/left_link_myspace.jpg" id="left-mys" border="0" /></a><br />
+			<br />
+			<a href="http://www.fender.com" target="_new"><img src="images/logo_fender.png" border="0" /></a><br /><br />
+			<a href="http://www.gibson.com" target="_new"><img src="images/logo_gibson.png" border="0" /></a><br />
+		</div>
+		<div id="middlecontent">
+			<img src="images/title_news.gif" /><br />
+			<b>News Headline</b><span class="posted"> - posted by Admin</span><br />
+			<i>Sep 20th, 2009</i><br />
+			<div style="padding-top: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam mattis tristique. Nunc in leo dui. Donec id turpis a felis molestie consequat vitae in lacus. Fusce rhoncus, neque vel laoreet ultricies, justo metus vestibulum tortor, sit amet malesuada est metus eu sem. Phasellus eget sapien erat, vel volutpat tellus. Vestibulum consequat lorem id diam rutrum at molestie neque sodales. Vivamus ac suscipit risus. Ut tristique tortor ut eros pretium congue pharetra ligula convallis. Suspendisse lacus velit, euismod nec</div><br />
+			<hr /><br />
+			<b>News Headline</b><span class="posted"> - posted by Admin</span><br />
+			<i>Sep 20th, 2009</i><br />
+			<div style="padding-top: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam mattis tristique. Nunc in leo dui. Donec id turpis a felis molestie consequat vitae in lacus. Fusce rhoncus, neque vel laoreet ultricies, justo metus vestibulum tortor, sit amet malesuada est metus eu sem. Phasellus eget sapien erat, vel volutpat tellus. Vestibulum consequat lorem id diam rutrum at molestie neque sodales. Vivamus ac suscipit risus. Ut tristique tortor ut eros pretium congue pharetra ligula convallis. Suspendisse lacus velit, euismod nec</div><br />
+			<hr /><br />
+			<b>News Headline</b><span class="posted"> - posted by Admin</span><br />
+			<i>Sep 20th, 2009</i><br />
+			<div style="padding-top: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam mattis tristique. Nunc in leo dui. Donec id turpis a felis molestie consequat vitae in lacus. Fusce rhoncus, neque vel laoreet ultricies, justo metus vestibulum tortor, sit amet malesuada est metus eu sem. Phasellus eget sapien erat, vel volutpat tellus. Vestibulum consequat lorem id diam rutrum at molestie neque sodales. Vivamus ac suscipit risus. Ut tristique tortor ut eros pretium congue pharetra ligula convallis. Suspendisse lacus velit, euismod nec</div>
+            <br /><br />
+            <img src="images/title_videos.gif" /><br />
+            <object width="480" height="385"><param name="movie" value="http://www.youtube.com/p/C63941F32940A920?hl=en_US&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/p/C63941F32940A920?hl=en_US&fs=1" type="application/x-shockwave-flash" width="480" height="385" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+            <br /><br />
+		</div>
+		<div id="rightside">
+			<img src="images/title_right_shows.gif" /><br />
+			<b>Oct 24th - Talegaters</b><br />
+			<i>with Heavy Duty</i><br /><br />
+			<b>Oct 24th - Talegaters</b><br />
+			<i>with Heavy Duty</i><br /><br />
+			<b>Oct 24th - Talegaters</b><br />
+			<i>with Heavy Duty</i><br /><br />
+			<b>Oct 24th - Talegaters</b><br />
+			<i>with Heavy Duty</i><br /><br />
+			<img src="images/rss_icon.png" /><br /><br />
+			<a href="http://www.sabian.com" target="_new"><img src="images/logo_sabian.png" border="0" /></a><br /><br />
+			<a href="http://www.tama.com" target="_new"><img src="images/logo_tama.png" border="0" /></a><br />
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<div id="footer">
+		<a href="http://del.icio.us/post?url=http://www.siztermachyne.com&title=Sizter Machyne" target="_new"><img src="images/footer_link_delicious.png" border="0" id="footer-del" /></a>
+		&nbsp;
+		<a href="http://digg.com/submit?phase=2&url=http://www.siztermachyne.com" target="_new"><img src="images/footer_link_digg.png" border="0" id="footer-dig" /></a>
+		&nbsp;
+		<a href="http://www.myspace.com/therealsiztermachyne" target="_new"><img src="images/footer_link_myspace.png" border="0" id="footer-mys" /></a>
+		<br /><br />
+		<a href="">news</a> | <a href="">band</a> | <a href="">shows</a> | <a href="">media</a> | <a href="">forum</a> | <a href="">merch</a> | <a href="">s&m team</a> | <a href="">links</a> | <a href="">contact</a><br /><br />
+		&copy; 2009 Sizter Machyne and Black Hawk Entertainment<br />
+		all rights reserved
+	</div>
+</center>
+
+<script language="javascript">
+$(document).ready(function(){
+	$('#footer-del').mouseover(function(){
+		$(this).attr('src','images/footer_link_delicious2.png');
+	});
+	$('#footer-del').mouseleave(function(){
+		$(this).attr('src','images/footer_link_delicious.png');
+	});	
+	
+	$('#footer-dig').mouseover(function(){
+		$(this).attr('src','images/footer_link_digg2.png');
+	});
+	$('#footer-dig').mouseleave(function(){
+		$(this).attr('src','images/footer_link_digg.png');
+	});
+	
+	$('#footer-mys').mouseover(function(){
+		$(this).attr('src','images/footer_link_myspace2.png');
+	});
+	$('#footer-mys').mouseleave(function(){
+		$(this).attr('src','images/footer_link_myspace.png');
+	});	
+	
+	$('#left-del').mouseover(function(){
+		$(this).attr('src','images/left_link_delicious2.jpg');
+	});
+	$('#left-del').mouseleave(function(){
+		$(this).attr('src','images/left_link_delicious.jpg');
+	});	
+	
+	$('#left-dig').mouseover(function(){
+		$(this).attr('src','images/left_link_digg2.jpg');
+	});
+	$('#left-dig').mouseleave(function(){
+		$(this).attr('src','images/left_link_digg.jpg');
+	});
+	
+	$('#left-mys').mouseover(function(){
+		$(this).attr('src','images/left_link_myspace2.jpg');
+	});
+	$('#left-mys').mouseleave(function(){
+		$(this).attr('src','images/left_link_myspace.jpg');
+	});			
+});
+</script>
+
+</body>
+</html>
+
+
+
+<!--
+
+<div id="navigation">
+<ul>
+
+<li id="btn_home"><a class="active" href="index.php"><span class="hide">Home</span></a></li>
+
+<li id="btn_library"><a  href="/library-2"><span class="hide">Library</span></a></li>
+
+<li id="btn_news"><a  href="/news"><span class="hide">News</span></a></li>
+
+<li id="btn_blog"><a  href="/blog_cms"><span class="hide">Blog</span></a></li>
+
+<li id="btn_faqs"><a  href="/faq-s"><span class="hide">FAQ's</span></a></li>
+
+<li id="btn_aboutus"><a  href="/about-us"><span class="hide">About Us</span></a></li>
+
+<li id="btn_contactus"><a  href="/contact-us"><span class="hide">Contact Us</span></a></li>
+
+</ul>
+</div>
+
+-->
